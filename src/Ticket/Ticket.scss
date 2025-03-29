@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+$primary-color: #2196f3;
+$text-color: #a0b0b9;
+
+html {
+  background-color: #f3f7fa;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.ticket {
+  width: 502px;
+  padding: 0px;
+  border: 0px solid black;
+  border-radius: 5px;
+  background: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+
+  &-pricelogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      margin-left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    img {
+      width: 110px;
+      height: 36px;
+      margin-right: 20px;
+    }
+  }
+
+  &-description {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  &-segment {
+    display: flex;
+    flex-direction: row;
+    width: 141px;
+    text-wrap: nowrap;
+  }
+
+  &-route {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+    & > p {
+      margin-bottom: 0px;
+    }
+  }
+
+  &-stops {
+    color: $text-color;
+    font-size: 12px;
+    margin-left: 80px;
+
+    & > p {
+      color: black;
+      text-align: left;
+    }
+  }
+  &-duration {
+    font-size: 12px;
+    margin-left: 80px;
+    & > p {
+      color: black;
+      text-align: left;
+    }
+  }
+}
+.gray {
+  color: $text-color !important;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
