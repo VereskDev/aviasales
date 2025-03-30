@@ -50,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 12px;
+  margin-left: 20px;
 }
 .ticket-route > p {
   margin-bottom: 0px;
